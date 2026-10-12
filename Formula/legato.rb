@@ -20,12 +20,12 @@ class Legato < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/danielbchurchill/legato/releases/download/v0.0.0/legato-server-0.0.0-darwin-arm64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      url "https://github.com/danielbchurchill/legato/releases/download/v0.1.0/legato-server-0.1.0-darwin-arm64.tar.gz"
+      sha256 "eb85aaea78086da38485d9c90485f704f09b5a871475d8bbb471db770f2ca479"
     end
     on_intel do
-      url "https://github.com/danielbchurchill/legato/releases/download/v0.0.0/legato-server-0.0.0-darwin-x64-baseline.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      url "https://github.com/danielbchurchill/legato/releases/download/v0.1.0/legato-server-0.1.0-darwin-x64-baseline.tar.gz"
+      sha256 "107226bfbfddb38b1ec4d8add3c922a5ef6728e7712f290a55614bf6e98d5637"
     end
   end
 
@@ -33,12 +33,12 @@ class Legato < Formula
   # are Legato's daily hosts, and `service do` writes a systemd user unit there.
   on_linux do
     on_arm do
-      url "https://github.com/danielbchurchill/legato/releases/download/v0.0.0/legato-server-0.0.0-linux-arm64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      url "https://github.com/danielbchurchill/legato/releases/download/v0.1.0/legato-server-0.1.0-linux-arm64.tar.gz"
+      sha256 "81e0cfefb092b4a955f5f06805d2e0d9068ff205642dd01384be9c22b2aaf9cc"
     end
     on_intel do
-      url "https://github.com/danielbchurchill/legato/releases/download/v0.0.0/legato-server-0.0.0-linux-x64-baseline.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      url "https://github.com/danielbchurchill/legato/releases/download/v0.1.0/legato-server-0.1.0-linux-x64-baseline.tar.gz"
+      sha256 "f0bb875dee430155fbdf67c99ff5d2d431af75e3491b325804696851fd2032c3"
     end
   end
 
