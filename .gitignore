@@ -1,0 +1,56 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+# Release archives and SHA256SUMS from scripts/package-release.mjs.
+dist-release
+# Vitest's artifact directory: attachments, blob and HTML reports.
+.vitest
+*.local
+*.tsbuildinfo
+
+# Fetched by scripts/fetch-media-binaries.mjs — real ffmpeg/fpcalc binaries
+# for bundling, never committed. The directory itself has to survive a fresh
+# checkout though: tauri.conf.json's bundle.resources references it, and
+# tauri_build::build() (src-tauri/build.rs) resolves that path unconditionally
+# at build time — even for `cargo clippy`/`cargo build`, not just a real
+# `tauri build` bundle — so a genuinely missing directory fails the build
+# outright ("resource path `binaries` doesn't exist"), confirmed on every
+# platform in CI. .gitkeep tracks the empty directory without tracking its
+# real (gitignored) contents.
+src-tauri/binaries/*
+!src-tauri/binaries/.gitkeep
+
+.claude/
+
+# Personal agent context: machine names, infrastructure, private planning
+# pointers. The shared conventions are in AGENTS.md.
+CLAUDE.local.md
+
+# Claude Design handoff bundles: HTML references to rebuild in src/, never
+# shipped. The briefs live in legato-plans/design/.
+design/
+
+# `bun build --compile` (server/scripts/compile.ts, issue #102) leaves a
+# temp `.<hash>-<n>.bun-build` file next to wherever it's invoked from on
+# top of the real dist/ output above.
+*.bun-build
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
